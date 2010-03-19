@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<environment>
+	<pathways>
+		<poi type="entrance">
+			<id>Decoupled</id>
+			<position>
+				<x>10</x>
+				<y>11</y>
+			</position>
+			<photo>entrance.jpg</photo>
+		</poi>
+		<poi type="installation">
+			<id>Art</id>
+			<position>
+				<x>26</x>
+				<y>3</y>
+			</position>
+			<photo>art.jpg</photo>
+		</poi>
+		<poi type="installation">
+			<id>Slideshow</id>
+			<position>
+				<x>38</x>
+				<y>4</y>
+			</position>
+			<photo>slideshow.jpg</photo>
+		</poi>
+		<poi type="installation">
+			<id>GoogleEarth</id>
+			<position>
+				<x>32</x>
+				<y>3</y>
+			</position>
+			<photo>googleearth.jpg</photo>
+		</poi>
+		<poi type="installation">
+			<id>Registration</id>
+			<position>
+				<x>6</x>
+				<y>10</y>
+			</position>
+			<photo>registration.jpg</photo>
+		</poi>
+		<poi type="installation">
+			<id>WorldMap</id>
+			<position>
+				<x>14</x>
+				<y>12</y>
+			</position>
+			<photo>worldmap.jpg</photo>
+		</poi>
+		<poi type="installation">
+			<id>PhotoWall</id>
+			<position>
+				<x>8</x>
+				<y>8</y>
+			</position>
+			<photo>photowall.jpg</photo>
+		</poi>
+		<poi type="nonInstallation">
+			<id>Storychart</id>
+			<position>
+				<x>30</x>
+				<y>7</y>
+			</position>
+			<photo>storychart.jpg</photo>
+		</poi>
+		<poi>
+			<id>RestStop</id>
+			<position>
+				<x>10</x>
+				<y>6</y>
+			</position>
+			<photo>coffee.jpg</photo>
+		</poi>
+		<poi type="nonInstallation">
+			<id>CoffeeMachine</id>
+			<position>
+				<x>8</x>
+				<y>3</y>
+			</position>
+			<photo>coffeemachin.jpg</photo>
+		</poi>
+		<poi type="nonInstallation">
+			<id>SketchPad</id>
+			<position>
+				<x>8</x>
+				<y>4</y>
+			</position>
+			<photo>sketch.jpg</photo>
+		</poi>
+		<poi>
+			<id>BC1</id>
+			<position>
+				<x>24</x>
+				<y>7</y>
+			</position>
+			<photo>bc1.jpg</photo>
+		</poi>
+		<poi>
+			<id>BC2</id>
+			<position>
+				<x>18</x>
+				<y>10</y>
+			</position>
+			<photo>bc2.jpg</photo>
+		</poi>
+		<poi>
+			<id>BC3</id>
+			<position>
+				<x>12</x>
+				<y>8</y>
+			</position>
+			<photo>bc3.jpg</photo>
+		</poi>
+
+		<route bi="true">
+			<a>BC3</a>
+			<b>RestStop</b>
+		</route>
+		<route bi="true">
+			<a>CoffeeMachine</a>
+			<b>RestStop</b>
+		</route>
+		<route bi="true">
+			<a>BC2</a>
+			<b>BC3</b>
+		</route>
+		<route bi="true">
+			<a>BC1</a>
+			<b>BC2</b>
+		</route>
+		<route bi="true">
+			<a>Art</a>
+			<b>BC1</b>
+		</route>
+		<route bi="true">
+			<a>Storychart</a>
+			<b>BC1</b>
+		</route>
+		
+		<route bi="true">
+			<a>WorldMap</a>
+			<b>BC3</b>
+		</route>
+		<route bi="true">
+			<a>WorldMap</a>
+			<b>Decoupled</b>
+		</route>
+		<route bi="true">
+			<a>WorldMap</a>
+			<b>Registration</b>
+		</route>
+		<route bi="true">
+			<a>Registration</a>
+			<b>Decoupled</b>
+		</route>
+		<route bi="true">
+			<a>Decoupled</a>
+			<b>BC3</b>
+		</route>
+		<route bi="true">
+			<a>Registration</a>
+			<b>BC3</b>
+		</route>
+		<route bi="true">
+			<a>Storychart</a>
+			<b>GoogleEarth</b>
+		</route>
+		<route bi="true">
+			<a>Slideshow</a>
+			<b>GoogleEarth</b>
+		</route>
+		<route bi="true">
+			<a>RestStop</a>
+			<b>PhotoWall</b>
+		</route>
+		<route bi="true">
+			<a>CoffeeMachine</a>
+			<b>PhotoWall</b>
+		</route>
+		<route bi="true">
+			<a>Art</a>
+			<b>Storychart</b>
+		</route>
+		<route bi="true">
+			<a>CoffeeMachine</a>
+			<b>SketchPad</b>
+		</route>
+		<route bi="true">
+			<a>RestStop</a>
+			<b>SketchPad</b>
+		</route>
+		<route bi="true">
+			<a>PhotoWall</a>
+			<b>SketchPad</b>
+		</route>	
+	</pathways>
+</environment>

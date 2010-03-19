@@ -1,0 +1,18 @@
+bzb0 - 128.243.19.178
+	art
+
+bzb1 - 128.243.19.179
+	googleearth
+
+bzb2 - 128.243.19.180
+	slideshow
+
+bzb3 -
+
+bzb4 - 128.243.19.182 - mysql, phidgets
+	visitormonitor
+	reg
+
+bzb5 - 128.243.19.183
+	worldmap
+	photo

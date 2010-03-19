@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repository>
+	<content code="1" name="Japan" isSeed="true" x="138.6" y="35.9">
+		<fact>Japan, or Nippon-koku ("Land of the Rising Sun") consists of over 3000 islands and has both a royal family (headed by Emperor Akihito) and a parliament, much like the UK.</fact>
+	</content>
+	<content code="2" name="Kenya" isSeed="true" x="36.8" y="-1.2">
+		<fact>The earliest known palaeontological records of mankind have been found here, causing this part of Africa to be known as "the cradle of life". Some believe it to be the original Garden of Eden ...</fact>
+	</content>
+	<content code="3" name="Cuba" isSeed="true" x="-79.0" y="22.0">
+		<fact>Education (including university) and healthcare here is free, yet most children are forced to leave school to provide for their families and hospitals are so poor that patients must bring their own bedding.</fact>
+	</content>
+	<content code="4" name="Area 51" isSeed="false">
+		<fact>Officially known as "Air Force Flight Test Centre, Detachment 3", this US military base is considered by some to be used as a landing site by visiting aliens ...</fact>
+	</content>
+	<content code="5" name="The Galapagos Islands" isSeed="false">
+		<fact>From his observation of birds here in 1835 Charles Darwin was able to add evidence to his "Origin of Species", which was (and continues to be) a controversial theory of animal evolution.</fact>
+	</content>
+	<content code="6" name="Timbuktu" isSeed="false">
+		<fact>Despite 22% of young British people believing that Timbuktu was not a real place, the city was once the key trading city of North Africa and one of the most respected Muslim academic centres.</fact>
+	</content>
+	<content code="7" name="The Dead Sea" isSeed="false">
+		<fact>This lake is 9 times saltier than the sea which means that no fish can survive here, hence its name. The unusual properties of its water has led to its reputation as the "oldest health spa in the world".</fact>
+	</content>
+	<content code="8" name="Chernobyl" isSeed="false">
+		<fact>In 1986 a nuclear reactor at Chernobyl exploded, sending a cloud of radiation across Europe, as far as the UK. In the towns close to the reactor every child is now born with health problems.</fact>
+	</content>
+	<content code="9" name="Kyrgyzstan" isSeed="false">
+		<fact>Here, one of the most popular sports is Kok Boru, where two teams on horse-back attempt to pass a headless goat carcass into the opposition's goal.</fact>
+	</content>
+	<content code="10" name="The Andaman Islands" isSeed="false">
+		<fact>Here the British established a camp to hold Indian political prisoners in the 19th century; later in 1943 it was here that the first Indian flag of indepedence was raised.</fact>
+	</content>
+	<content code="11" name="Monaco" isSeed="false">
+		<fact>Monaco has no income tax for individuals leading to a considerable number of wealthy "tax refugee" residents from European countries. The Monte Carlo Casino is one of the most famous tourist attractions of Monaco, but it is illegal for Monaco citizens even to enter.</fact>
+	</content>
+	<content code="12" name="The Nazca lines" isSeed="false">
+		<fact>From the air above the Nazca desert, one sees the ground come alive with huge outlines of geometric figures and spiders, birds, fish, llamas, condors, snakes, 6-petaled flowers, and haloed gods. Some of the figures are longer than 2 football fields; some of the lines are 40 mi. long. Many of the carvings can be seen only at a certain time - an hour of the day, a time of year - when light hits them at a special angle.</fact>
+	</content>
+	<content code="13" name="Roanoke Colony" isSeed="false">
+		<fact>In 1587, colonists led by Governor John White settled on Roanoke. 3 years later that White returned with supplies for the 121 settlers, who had included his wife, daughter, and granddaughter. When the sailors landed and entered the village, they found it mysteriously deserted. The fort and homes still stood intact. The only clue was the word "CROATAN" carved in the bark of a tree near the gate of the fort.</fact>
+	</content>
+	<content code="14" name="Easter Island" isSeed="false">
+		<fact>When the Dutch navigator Jaakob Roggeveen discovered Easter Island in 1722, he found huge stone statues there that he could not explain. Some are as high as a 3-story house and weigh over 60 tons, yet Easter Island is tiny and far from any other land. It is also said that Captain Cook found red-haired and blond white people on Easter Island, not typical Polynesians.</fact>
+	</content>
+	<content code="15" name="Oak Island treasure" isSeed="false">
+		<fact>in 1795 3 canoeists found a giant oak tree, covered with marks and figures. Under it was a depression and here the men began to dig. Ten feet below the surface of the ground, they uncovered an oak platform. There was another platform at 20, another at 30. Since then, many people (including Franklin Roosevelt) have tried to get to the treasure, which lies 170 feet deep in the earth and is elaborately guarded by tunnels, tides, and wooden platforms.</fact>
+	</content>
+	<content code="16" name="Lascaux" isSeed="false">
+		<fact>The caves at Lascaux contain paintings which were made by ancient people 15,000-20,000 years ago. Their techniques were far more sophisticated than civilisations which came later: they used perspective (which was not rediscovered until almost the 15th century) and used shadows and highlights expertly. The cave was discovered in 1940 and is now closed to protect the art.</fact>
+	</content>
+	<content code="17" name="Tlachihualtepetl" isSeed="false">
+		<fact>The Great Pyramid of Cholula or Tlachihualtepetl is the world's largest monument. It was built over many dozens of generations, from the 2nd century BC to the early 16th century, and was dedicated to the god Quetzalcoatl. Inside the pyramid are five miles (8 km) of tunnels excavated by archaeologists.</fact>
+	</content>
+	<content code="18" name="Otzi the Iceman" isSeed="false">
+		<fact>He is a man from about 3300 BC - Europe's oldest natural human mummy - found by two German tourists in 1991. Because the body was covered in ice shortly after his death, it only partially deteriorated and study has discovered his last two meals, his age, where he was born, where he lived, and his lifestyle. It is alleged that the deaths of seven people working on Otzi have been due to 'Otzi's curse'.</fact>
+	</content>
+	<content code="19" name="Palermo crypts" isSeed="false">
+		<fact>Palermo's Cappuccin crypt is a subterranean gallery filled with 8,000 bodies without souls howling silently at their mortality. For centuries people would choose their niche before they died and then, after death, dressed in their Sunday best, they were hung up to dry. The catacombs date back to 1599 when the local priests mummified a holy monk for all to see: they wanted to pray to him after death.</fact>
+	</content>
+	<content code="20" name="Potala Palace" isSeed="false">
+		<fact>The Potala Palace was the chief residence of the Dalai Lama until the 14th Dalai Lama fled to Dharamsala, India after an invasion and failed uprising in 1959. The site was used as a meditation retreat by King Songtsen Gampo, who in 637 built the first palace there in order to greet his bride Princess Wen Cheng of the Tang Dynasty of China. Today the Potala Palace has been converted into a museum by the Chinese.</fact>
+	</content>
+	<content code="21" name="San Cassiano" isSeed="false">
+		<fact>Birthplace of famous Computer Scientist, Adriano Galati. Located on the Salento peninsula where Pizzica is a popular traditional dance. It is part of the large family of the tarantelle dances. Also has big olive trees.</fact>
+	</content>
+</repository>

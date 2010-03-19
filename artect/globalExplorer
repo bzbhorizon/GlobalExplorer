@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:ect="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Resource">
+    <rdfs:isDefinedBy>
+      <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#">
+        <rdfs:seeAlso rdf:resource="http://www.w3.org/2000/01/rdf-schema-more"/>
+      </rdf:Description>
+    </rdfs:isDefinedBy>
+    <rdfs:label>Resource</rdfs:label>
+    <rdfs:comment>The class resource, everything.</rdfs:comment>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <rdfs:label>List</rdfs:label>
+    <rdfs:comment>The class of RDF Lists.</rdfs:comment>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/2002/07/owl#Class">
+    <rdfs:label>Class</rdfs:label>
+    <rdfs:subClassOf>
+      <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    </rdfs:subClassOf>
+  </rdfs:Class>
+  <rdfs:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Class">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2000/01/rdf-schema#"/>
+    <rdfs:label>Class</rdfs:label>
+    <rdfs:comment>The class of classes.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#Resource"/>
+  </rdfs:Class>
+  <owl:Class rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#ThingDetails">
+    <rdfs:label>Thing Details</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#PropertyDetails"/>
+  <owl:Class rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#Control"/>
+  <owl:Class rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#Association">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#Link"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Association</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#Slider">
+    <rdfs:subClassOf rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#Control"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#MediaFileLocation">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >
+			information about where (and when) a particular piece of media exists/existed as a file
+			on a particular device
+		</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#SoftwareThing">
+    <rdfs:label>Software Thing</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#SceneObject">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#PhysicalThing"/>
+    </rdfs:subClassOf>
+    <rdfs:label>3D Object</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#FileSelect">
+    <rdfs:subClassOf rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#Control"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#Link">
+    <rdfs:label>Link</rdfs:label>
+    <ect:image>
+      <ect:MediaFileLocation>
+        <ect:filePath>icons/connect.gif</ect:filePath>
+      </ect:MediaFileLocation>
+    </ect:image>
+    <ect:image>
+      <ect:MediaFileLocation>
+        <ect:filePath>icons/connect.gif</ect:filePath>
+      </ect:MediaFileLocation>
+    </ect:image>
+    <ect:image>
+      <ect:MediaFileLocation>
+        <ect:filePath>icons/connect.gif</ect:filePath>
+      </ect:MediaFileLocation>
+    </ect:image>
+    <ect:image>
+      <ect:MediaFileLocation>
+        <ect:filePath>icons/connect.gif</ect:filePath>
+      </ect:MediaFileLocation>
+    </ect:image>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#PhysicalThing">
+    <rdfs:label>Physical Thing</rdfs:label>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >
+			Any physical thing. Not a digital thing. Use dc:description to describe it informally.
+		</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#ARMarker">
+    <rdfs:label>AR Marker</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#PhysicalThing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#Computer">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >
+			a computer device
+		</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#Device"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Nothing">
+    <rdfs:label>Nothing</rdfs:label>
+    <owl:complementOf>
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:complementOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#UI"/>
+  <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing">
+    <rdfs:label>Thing</rdfs:label>
+    <owl:unionOf rdf:parseType="Collection">
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+      <owl:Class>
+        <owl:complementOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+      </owl:Class>
+    </owl:unionOf>
+    <owl:unionOf rdf:parseType="Collection">
+      <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+      <owl:Class>
+        <owl:complementOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+      </owl:Class>
+    </owl:unionOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#ComponentDetails">
+    <rdfs:subClassOf rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#SoftwareThing"/>
+    <rdfs:label>Software Component Details</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#Device">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >
+			some kind of technical device, such as a computer
+		</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#PhysicalThing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#WebPage">
+    <rdfs:label>Document</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#PhysicalThing"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#Webcam">
+    <rdfs:label>Webcam</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#Device"/>
+  </owl:Class>
+  <ect:Slider rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#ScaleYSlider">
+    <dc:title>authoringScaleY</dc:title>
+    <rdfs:label>Scale along y-axis</rdfs:label>
+    <ect:decimalPlaces>2</ect:decimalPlaces>
+    <ect:rangeMin>0</ect:rangeMin>
+    <ect:origin>1</ect:origin>
+    <ect:rangeMax>10</ect:rangeMax>
+  </ect:Slider>
+  <ect:ThingDetails rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#WebcamDetails">
+    <ect:createLink>
+      <ect:Link rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#sourceSinkARMarkerLink">
+        <rdfs:label>source->sink</rdfs:label>
+        <ect:source>source</ect:source>
+        <ect:destination>sink</ect:destination>
+        <ect:reverseLink>true</ect:reverseLink>
+      </ect:Link>
+    </ect:createLink>
+    <ect:thingType rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#Webcam"/>
+  </ect:ThingDetails>
+  <ect:Slider rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#RotateYSlider">
+    <dc:title>authoringRotateY</dc:title>
+    <ect:rangeMax>360</ect:rangeMax>
+    <ect:scale>360</ect:scale>
+    <rdfs:label>Rotate about y-axis</rdfs:label>
+    <ect:rangeMin>0</ect:rangeMin>
+  </ect:Slider>
+  <ect:ComponentDetails rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#WebCamponentDetails">
+    <dc:title>JMFVideoCaptureManager</dc:title>
+  </ect:ComponentDetails>
+  <ect:Slider rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#RotateZSlider">
+    <ect:scale>360</ect:scale>
+    <ect:rangeMin>0</ect:rangeMin>
+    <dc:title>authoringRotateZ</dc:title>
+    <rdfs:label>Rotate about z-axis</rdfs:label>
+    <ect:rangeMax>360</ect:rangeMax>
+  </ect:Slider>
+  <ect:ARMarker rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#ARMarkerA">
+    <ect:image>
+      <ect:MediaFileLocation>
+        <ect:filePath>images/armarkera.png</ect:filePath>
+      </ect:MediaFileLocation>
+    </ect:image>
+    <ect:yOffset>89</ect:yOffset>
+    <ect:plugsInto rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#WebcamDetails"/>
+    <rdfs:label>AR Marker A</rdfs:label>
+    <ect:classification>AR Markers</ect:classification>
+    <ect:createComponent>
+      <ect:ComponentDetails>
+        <ect:proxyComponent>true</ect:proxyComponent>
+        <dc:title>ARToolkitGlyphTracker</dc:title>
+        <ect:setProperty>
+          <ect:PropertyDetails>
+            <rdf:value>file:///C:/inScape/ect/resources/ARToolkit/data/A.patt</rdf:value>
+            <dc:title>glyphUrl</dc:title>
+          </ect:PropertyDetails>
+        </ect:setProperty>
+      </ect:ComponentDetails>
+    </ect:createComponent>
+    <ect:xOffset>375</ect:xOffset>
+  </ect:ARMarker>
+  <ect:Slider rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#ScaleZSlider">
+    <dc:title>authoringScaleZ</dc:title>
+    <ect:decimalPlaces>2</ect:decimalPlaces>
+    <rdfs:label>Scale along z-axis</rdfs:label>
+    <ect:rangeMax>10</ect:rangeMax>
+    <ect:rangeMin>0</ect:rangeMin>
+    <ect:origin>1</ect:origin>
+  </ect:Slider>
+  <ect:Slider rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#MoveYSlider">
+    <ect:rangeMax>1000</ect:rangeMax>
+    <rdfs:label>Move along y-axis</rdfs:label>
+    <ect:rangeMin>-1000</ect:rangeMin>
+    <dc:title>authoringTranslateY</dc:title>
+  </ect:Slider>
+  <ect:Association>
+    <ect:source rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#ARMarkerA"/>
+    <ect:createLink rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#sourceSinkARMarkerLink"/>
+    <rdfs:label>AR Marker A -> Webcam</rdfs:label>
+    <ect:destination>
+      <ect:Webcam rdf:nodeID="A0">
+        <ect:plugsInto>
+          <ect:ThingDetails>
+            <ect:thingType rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#Computer"/>
+          </ect:ThingDetails>
+        </ect:plugsInto>
+        <rdfs:label>Webcam</rdfs:label>
+        <ect:createComponent>
+          <ect:ComponentDetails rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#workshopScene">
+            <ect:setProperty>
+              <ect:PropertyDetails>
+                <dc:title>x3dFilename</dc:title>
+                <rdf:value>C:\inScape\ect\resources\arauthoring\3dmodels\WorkshopScene\WorkshopScene03.x3d</rdf:value>
+              </ect:PropertyDetails>
+            </ect:setProperty>
+            <ect:createLink>
+              <ect:Link>
+                <ect:component>JMFVideoCaptureDevice</ect:component>
+                <ect:destination>sink</ect:destination>
+                <ect:source>source</ect:source>
+              </ect:Link>
+            </ect:createLink>
+            <dc:title>SceneGraphBase</dc:title>
+          </ect:ComponentDetails>
+        </ect:createComponent>
+        <ect:createComponent rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#WebCamponentDetails"/>
+        <ect:proxyComponent>
+          <ect:ComponentDetails>
+            <dc:title>JMFVideoCaptureDevice</dc:title>
+            <ect:matchProperty>
+              <ect:PropertyDetails>
+                <dc:title>status</dc:title>
+                <rdf:value>OK</rdf:value>
+              </ect:PropertyDetails>
+            </ect:matchProperty>
+            <ect:setProperty>
+              <ect:PropertyDetails>
+                <dc:title>delayMs</dc:title>
+                <rdf:value>0</rdf:value>
+              </ect:PropertyDetails>
+            </ect:setProperty>
+          </ect:ComponentDetails>
+        </ect:proxyComponent>
+        <ect:yOffset>135</ect:yOffset>
+        <ect:xOffset>202</ect:xOffset>
+        <ect:image>
+          <ect:MediaFileLocation>
+            <ect:filePath>images/webcam.jpg</ect:filePath>
+          </ect:MediaFileLocation>
+        </ect:image>
+        <rdfs:comment>Plugged into a computer</rdfs:comment>
+      </ect:Webcam>
+    </ect:destination>
+  </ect:Association>
+  <ect:Association>
+    <ect:source rdf:nodeID="A0"/>
+    <ect:destination>
+      <ect:Computer rdf:about="http://www.equator.ac.uk/equip/guid#bzb0">
+        <rdfs:label>Computer 'bzb0'</rdfs:label>
+        <ect:image>
+          <ect:MediaFileLocation>
+            <ect:filePath>images/shuttle.jpg</ect:filePath>
+          </ect:MediaFileLocation>
+        </ect:image>
+        <ect:classification>Computers</ect:classification>
+        <dc:identifier>bzb0</dc:identifier>
+        <ect:yOffset>0</ect:yOffset>
+        <ect:xOffset>0</ect:xOffset>
+      </ect:Computer>
+    </ect:destination>
+    <rdfs:label>Webcam -> Computer 'bzb0'</rdfs:label>
+  </ect:Association>
+  <ect:ThingDetails rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#ARMarkerDetails">
+    <ect:thingType rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#ARMarker"/>
+    <ect:createLink>
+      <ect:Link rdf:nodeID="A1">
+        <ect:source>glyphTransform</ect:source>
+        <ect:destination>transformationMatrix</ect:destination>
+        <ect:reverseLink>true</ect:reverseLink>
+      </ect:Link>
+    </ect:createLink>
+    <ect:createLink>
+      <ect:Link rdf:nodeID="A2">
+        <ect:source>glyphVisible</ect:source>
+        <ect:destination>visible</ect:destination>
+        <ect:reverseLink>true</ect:reverseLink>
+      </ect:Link>
+    </ect:createLink>
+  </ect:ThingDetails>
+  <ect:Association>
+    <rdfs:label>Custom Document 1 -> AR Marker A</rdfs:label>
+    <ect:source>
+      <ect:WebPage rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#CustomDocument1">
+        <ect:xOffset>702</ect:xOffset>
+        <ect:plugsInto>
+          <ect:ThingDetails rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#WebPageObjectDetails">
+            <ect:thingType rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#SceneObject"/>
+            <ect:createLink>
+              <ect:Link>
+                <ect:destination>displayContent</ect:destination>
+                <ect:reverseLink>true</ect:reverseLink>
+                <ect:source>visible</ect:source>
+              </ect:Link>
+            </ect:createLink>
+          </ect:ThingDetails>
+        </ect:plugsInto>
+        <rdfs:label>Custom Document 1</rdfs:label>
+        <ect:createComponent>
+          <ect:ComponentDetails>
+            <ect:setProperty>
+              <ect:PropertyDetails>
+                <dc:title>content</dc:title>
+                <rdf:value>file:///C:/inScape/ect/resources/arauthoring/documents/custom1.html</rdf:value>
+              </ect:PropertyDetails>
+            </ect:setProperty>
+            <dc:title>SwingBrowserComponent</dc:title>
+            <ect:proxyComponent>true</ect:proxyComponent>
+          </ect:ComponentDetails>
+        </ect:createComponent>
+        <ect:image>
+          <ect:MediaFileLocation>
+            <ect:filePath>images/document.png</ect:filePath>
+          </ect:MediaFileLocation>
+        </ect:image>
+        <ect:ui>
+          <ect:UI rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#WebPageFileSelectUI">
+            <ect:control>
+              <ect:FileSelect rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#WebPageFileSelectControl">
+                <dc:title>content</dc:title>
+                <rdfs:label>Document</rdfs:label>
+              </ect:FileSelect>
+            </ect:control>
+          </ect:UI>
+        </ect:ui>
+        <ect:classification>Documents</ect:classification>
+        <ect:plugsInto>
+          <ect:ThingDetails rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#WebPageMarkerInteractionDetails">
+            <ect:createLink>
+              <ect:Link>
+                <ect:destination>displayContent</ect:destination>
+                <ect:reverseLink>true</ect:reverseLink>
+                <ect:source>isClose</ect:source>
+              </ect:Link>
+            </ect:createLink>
+            <ect:thingType rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#MarkerInteraction"/>
+          </ect:ThingDetails>
+        </ect:plugsInto>
+        <ect:plugsInto>
+          <ect:ThingDetails rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#WebPageARMarkerDetails">
+            <ect:createLink>
+              <ect:Link rdf:nodeID="A3">
+                <ect:source>glyphVisible</ect:source>
+                <ect:destination>displayContent</ect:destination>
+                <ect:reverseLink>true</ect:reverseLink>
+              </ect:Link>
+            </ect:createLink>
+            <ect:thingType rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#ARMarker"/>
+          </ect:ThingDetails>
+        </ect:plugsInto>
+        <ect:yOffset>127</ect:yOffset>
+      </ect:WebPage>
+    </ect:source>
+    <ect:destination rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#ARMarkerA"/>
+    <ect:createLink rdf:nodeID="A3"/>
+  </ect:Association>
+  <ect:Slider rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#MoveZSlider">
+    <ect:rangeMax>1000</ect:rangeMax>
+    <dc:title>authoringTranslateZ</dc:title>
+    <ect:rangeMin>-1000</ect:rangeMin>
+    <rdfs:label>Move along z-axis</rdfs:label>
+  </ect:Slider>
+  <rdf:List rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil">
+    <rdfs:isDefinedBy rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <rdfs:label>nil</rdfs:label>
+    <rdfs:comment>The empty list, with no items in it. If the rest of a list is nil then the list has no more items in it.</rdfs:comment>
+  </rdf:List>
+  <ect:UI rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#SceneUI">
+    <ect:control rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#MoveZSlider"/>
+    <ect:control>
+      <ect:Slider rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#RotateXSlider">
+        <ect:rangeMax>360</ect:rangeMax>
+        <dc:title>authoringRotateX</dc:title>
+        <ect:rangeMin>0</ect:rangeMin>
+        <ect:scale>360</ect:scale>
+        <rdfs:label>Rotate about x-axis</rdfs:label>
+      </ect:Slider>
+    </ect:control>
+    <ect:control rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#ScaleZSlider"/>
+    <ect:control rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#MoveYSlider"/>
+    <ect:control rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#RotateYSlider"/>
+    <ect:control>
+      <ect:Slider rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#MoveXSlider">
+        <dc:title>authoringTranslateX</dc:title>
+        <ect:rangeMin>-1000</ect:rangeMin>
+        <rdfs:label>Move along x-axis</rdfs:label>
+        <ect:rangeMax>1000</ect:rangeMax>
+      </ect:Slider>
+    </ect:control>
+    <ect:control rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#RotateZSlider"/>
+    <ect:control>
+      <ect:Slider rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#ScaleXSlider">
+        <dc:title>authoringScaleX</dc:title>
+        <ect:decimalPlaces>2</ect:decimalPlaces>
+        <ect:rangeMax>10</ect:rangeMax>
+        <ect:origin>1</ect:origin>
+        <rdfs:label>Scale along x-axis</rdfs:label>
+        <ect:rangeMin>0</ect:rangeMin>
+      </ect:Slider>
+    </ect:control>
+    <ect:control rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#ScaleYSlider"/>
+  </ect:UI>
+  <ect:SceneObject rdf:about="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#wsApple">
+    <ect:ui rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#SceneUI"/>
+    <ect:xOffset>493</ect:xOffset>
+    <ect:proxyComponent>
+      <ect:ComponentDetails>
+        <dc:title>SceneGraphObject</dc:title>
+        <ect:matchProperty>
+          <ect:PropertyDetails>
+            <dc:title>name</dc:title>
+            <rdf:value>Apple</rdf:value>
+          </ect:PropertyDetails>
+        </ect:matchProperty>
+      </ect:ComponentDetails>
+    </ect:proxyComponent>
+    <ect:classification>3D Objects</ect:classification>
+    <ect:image>
+      <ect:MediaFileLocation>
+        <ect:filePath>images/apple.jpg</ect:filePath>
+      </ect:MediaFileLocation>
+    </ect:image>
+    <ect:plugsInto rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#ARMarkerDetails"/>
+    <ect:createComponent rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#workshopScene"/>
+    <ect:yOffset>271</ect:yOffset>
+    <rdfs:label>Apple</rdfs:label>
+  </ect:SceneObject>
+  <ect:Association>
+    <ect:destination rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#ARMarkerA"/>
+    <ect:createLink rdf:nodeID="A2"/>
+    <ect:createLink rdf:nodeID="A1"/>
+    <rdfs:label>Apple -> AR Marker A</rdfs:label>
+    <ect:source rdf:resource="http://www.ncess.ac.uk/nodes/digitalrecord/digitalrecord.owl#wsApple"/>
+  </ect:Association>
+</rdf:RDF>

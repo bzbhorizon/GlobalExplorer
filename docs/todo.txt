@@ -1,0 +1,16 @@
+put away screen
+hypercam/camstudio on pcs
+clients on phones
+charge phones
+move worldmap
+check cam positions
+fake posters
+cover wires
+//waypoint photos
+//environment map
+//return accel poll to couple rather than micro entry
+//add numkey movements to gearth
+//change coupling instructions to be general
+//looping python
+//find 4-ways
+//setup artect (glyphs, objects and web pages)

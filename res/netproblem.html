@@ -1,0 +1,57 @@
+<html>
+<head>
+<style>
+/* ---------- horizontal and vertical centering ----------- */
+
+/* Regular CSS for good browsers */
+
+html, body {height: 100%; margin: 0; padding: 0;}
+
+body {display: table; height: 100%; width: 100%; text-align: center;}
+
+.colour1 {color: white;}
+.colour2 {color: black;}
+
+#wrapper {display: table-cell; vertical-align: middle;}
+
+#centered {width: 30em; margin: 0 auto;}
+
+/*]]>*/
+</style>
+
+<!--[if lte IE 7]>
+<style type="text/css" media="all">
+/* additional mode-independent garbage for IE-win */
+
+/* ==== the final solution ==== */
+
+div#centered {margin-top: expression(((document.documentElement.offsetHeight/2)
+-(parseInt(offsetHeight)/2) -2) <0 ? "0" : 
+(document.documentElement.offsetHeight/2)
+-(parseInt(offsetHeight)/2) -2 +'px') ;}
+
+/* The advantage of this solution is that we don't have to make changes in the expression itself if we
+   change, or leave out, height on the centered container in our stylesheets. IE-win will extract and 
+   use the height of the element itself. */
+
+</style>
+<script type="text/javascript">
+
+function colourChange1 () {
+	document.getElementById("loading").className="colour1";
+	setTimeout("colourChange2()",500);
+}
+function colourChange2 () {
+	document.getElementById("loading").className="colour2";
+	setTimeout("colourChange1()",500);
+}
+
+</script>
+<body onload="colourChange1();">
+<div id="wrapper">
+<div id="centered">
+<p id="loading" style="font-size: 230pt; color: red; font-family: arial, helvetica; font-weight: bold;" id="middle">INTERNET IS BROKE</p>
+</div>
+</div>
+</body>
+</html>
